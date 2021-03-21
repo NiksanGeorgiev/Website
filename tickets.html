@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html> <!-- start of HTML tag-->
+<head><!-- start of head tag-->
+    <title> Nikolay Georgiev | Tickets </title> <!-- title of the page -->
+    <link rel="stylesheet" href="css/stylesheet.css">
+</head><!-- end of head tag-->
+
+<body><!-- start of body tag-->
+    <header><!-- start of header-->
+        <a href="index.html"> <!-- start of link to homepage-->
+            <h1> Nikolay's Website</h1> <!--main text for link-->
+                <h2> Theme Park</h2> <!--subheading text for link-->
+        </a><!-- end of link to homepage-->
+        <nav> <!-- start of nav section-->
+            <ul> <!-- unordered list of for nav links-->
+                    <li><a href="index.html">Home</a></li> <!--link for main navigation homepage-->
+                    <li><a href="about.html">About</a></li> <!--link for main navigation About-->
+                    <li><a href="tickets.html" style="color:#2c4570">Tickets</a></li> <!--link for main navigation Tickets-->
+                    <li><a href="gallery.html">Gallery</a></li> <!--link for main navigation Gallery-->
+                    <li><a href="contact.html">Contact</a></li> <!--link for main navigation Contact-->
+            </ul>
+        </nav> <!-- end of nav section-->
+    </header> <!-- end of header-->
+    
+    <h2 style="text-align:center">Total Price (£):</h2>
+    <p  id = "price" style="text-align:center; font-size: 20px;">0</p> <!--Paragraph in which the sum of the tickets will be displayed-->
+    
+    <!--Script for changing total sum and displaying number of tickets-->
+    <script type="text/javascript">
+    var sum = 0;
+    var child = 0;
+    var adult = 0;
+    var family = 0;
+        function totalPrice(text, number) {
+          if (number == 10) child++;
+          if (number == 15) adult++;
+          if (number == 40) family++;
+          if (number == -10){
+            child--;
+            if (child == -1) {
+              child = 0;
+              alert("You can't do that!");
+              return sum;
+            }
+          }
+          if (number == -15){
+            adult--;
+            if (adult == -1){
+              adult = 0;
+              alert("You can't do that!");
+              return sum;
+            }
+          }
+          if (number == -40){
+            family--;
+            if (family == -1){ 
+              alert("You can't do that!");
+              family = 0;
+              return sum;
+            }
+          }
+            sum += number;
+            return sum.toString();
+        }
+      function tickets(number) {
+          if (number == 10) return child.toString();
+          if (number == 15) return adult.toString();
+          if (number == 40) return family.toString();
+          if (number == -10) return child.toString();
+          if (number == -15) return adult.toString();
+          if (number == -40) return family.toString();
+      }
+    </script><!--End of script for changing total sum-->
+
+    <div class="columns"> <!--start of column with details about the child tickets-->
+      <ul class="price">
+        <li class="header">Child</li>
+        <li>Person under 16</li>
+        <li>£10</li>
+        <li>Only yellow marked rides</li>
+        <li>Number of tickets: <p id="numberTicketsChild">0</p></li>
+        <li>
+            <button class="button" 
+              onclick="document.getElementById('price').innerHTML = totalPrice(document.getElementById('price').innerHTML, 10); 
+              document.getElementById('numberTicketsChild').innerHTML = tickets(10)">+</button> <!--Button for incrementing the number of tickets-->
+              <button class="button" 
+              onclick="document.getElementById('price').innerHTML = totalPrice(document.getElementById('price').innerHTML, -10); 
+              document.getElementById('numberTicketsChild').innerHTML = tickets(-10)">-</button> <!--Button for decrementing the number of tickets-->
+        </li>
+        
+      </ul>
+    </div><!--end of column with details about the child tickets-->
+
+    <div class="columns"><!--start of column with details about the adult tickets-->
+      <ul class="price">
+        <li class="header">Adult</li>
+        <li>Person over 16</li>
+        <li>£15</li>
+        <li>All rides</li>
+        <li>Number of tickets: <p id="numberTicketsAdult">0</p></li>
+        <li>
+          <button class="button" 
+          onclick="document.getElementById('price').innerHTML = totalPrice(document.getElementById('price').innerHTML, 15); 
+          document.getElementById('numberTicketsAdult').innerHTML = tickets(15)">+</button> <!--Button for incrementing the number of tickets-->
+          <button class="button" 
+          onclick="document.getElementById('price').innerHTML = totalPrice(document.getElementById('price').innerHTML, -15); 
+          document.getElementById('numberTicketsAdult').innerHTML = tickets(-15)">-</button> <!--Button for decrementing the number of tickets-->
+        </li>
+      </ul>
+    </div><!--end of column with details about the adult tickets-->
+    
+    <div class="columns"><!--start of column with details about the family tickets-->
+      <ul class="price">
+        <li class="header">Family</li>
+        <li>2 adults + 2 children</li>
+        <li>£40</li>
+        <li>All rides if with parent</li>
+        <li>Number of tickets: <p id="numberTicketsFamily">0</p></li>
+        <li>
+          <button class="button" 
+          onclick="document.getElementById('price').innerHTML = totalPrice(document.getElementById('price').innerHTML, 40); 
+          document.getElementById('numberTicketsFamily').innerHTML = tickets(40)">+</button> <!--Button for incrementing the number of tickets-->
+          <button class="button" 
+          onclick="document.getElementById('price').innerHTML = totalPrice(document.getElementById('price').innerHTML, -40); 
+          document.getElementById('numberTicketsFamily').innerHTML = tickets(-40)">-</button> <!--Button for decrementing the number of tickets-->
+        </li>
+      </ul>
+    </div><!--end of column with details about the family tickets-->
+
+    <footer>
+        <a href="#"> <img src="images/facebook-wrap.png" alt="Facebook Logo"></a>
+        <a href="#"><img src="images/twitter-wrap.png" alt="Twitter Logo"></a>
+        <p>&Copy; Nikolay Georgiev</p>
+    </footer>
+</body><!-- end of body tag-->
+    
+</html> <!-- end of HTML tag-->
