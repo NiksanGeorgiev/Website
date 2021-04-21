@@ -34,33 +34,6 @@ html,body{
 }
 
 
-.column {
-  width:50%;
-  max-height: 500px;
-  font-size: 20px;
-  margin: 15px;
-  text-align: justify;
-}
-
-.column img {
-  width:100%;
-  height:100%;
-}
-
-.homepagePic {
-	max-width:60%;
-	margin: auto;
-	text-align: center;
-	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-	font-size: 20px;
-	font-weight: 200;
-}
-
-.homepagePic img{
-	width: 100%;
-	height: 70%;
-}
-
 /***********************
 HEADER + NAVIGATION
 ***********************/
@@ -248,10 +221,161 @@ HOME PAGE
   z-index: 2;
   position: relative;
 }
+
+.column {
+  width:50%;
+  max-height: 500px;
+  font-size: 20px;
+  margin: 15px;
+  text-align: justify;
+}
+
+.column img {
+  width:100%;
+  height:100%;
+}
+
+.homepagePic {
+	max-width:60%;
+	margin: auto;
+	text-align: center;
+	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 20px;
+	font-weight: 200;
+}
+
+.homepagePic img{
+	width: 100%;
+	height: 70%;
+}
+
 /***********************
-ABOUT PAGE
+TEAM PAGE
 ***********************/
-  
+.babaduk{
+  padding-top: 20px;
+}
+
+.babasluk{
+  text-align: center;
+  color: rgb(121, 47, 47);
+  padding: 1rem;
+  position: relative;
+}
+
+.babasluk:after{
+  content: '';
+  position:absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 4px;
+  width: 100px;
+  background-color: #2ecc71;
+  border-radius: 2px;
+}
+
+.konteiner{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  grid-gap: 1rem;
+  padding: 1rem 80px;
+  font-size: 1.2rem;
+}
+
+.skill-box{
+  padding: 1rem;
+  color: rgb(51, 117, 86);
+}
+
+.skill-box:hover > .skill-title:after, .skill-box:hover > .skill-title:before{
+  width: 35px;
+}
+
+.skill-box:hover .img{
+  transform: translateY(-10px);
+}
+
+.skill-title{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  position: relative;
+}
+
+.skill-title:after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  width: 0px;
+  height: 4px;
+  border-radius: 2px 0 0 2px;
+  background-color: #2ecc71;
+  transition: .5s;
+}
+
+.skill-title:before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 4px;
+  border-radius: 0 2px 2px 0;
+  background-color: #2ecc71;
+  transition: .5s;
+}
+
+.img{
+  width: 90px;
+  height: 90px;
+  position: relative;
+  border-radius: 45px;
+  background-color: rgb(163, 163, 163);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .5s;
+}
+
+.img:after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 90px;
+  background: rgba(100,100,100,0.5);
+  border-radius: 45px 0 0 45px; 
+}
+
+.skill-title h3{
+  color: rgb(138, 39, 100);
+  margin: 0.5rem;
+}
+
+.skill-icon{
+  width: 50px;
+  z-index: 2;
+}
+
+@media screen and (max-width: 990px) {
+  .konteiner{
+    grid-template-columns: repeat(2, 1fr);
+    padding: 2rem 50px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .konteiner{
+    grid-template-columns: 1fr;
+  }
+}
 /***********************
 TICKETS PAGE
 ***********************/
