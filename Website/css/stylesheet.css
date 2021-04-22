@@ -669,9 +669,30 @@ form .input-box span.details{
   border-color: #BC6C25;
 }
 
+form .gender-details small,
+form .user-details small {
+	color: #e74c3c;
+  visibility: hidden;
+}
+
+form .gender-details.error small,
+form .user-details .error small {
+  visibility: visible;
+}
+
 form .gender-details .gender-title{
 font-size: 20px;
 font-weight: 500;
+}
+
+.user-details .error input,
+.user-details .error select {
+	border-color: #e74c3c;
+}
+
+.user-details .success input,
+.user-details .success select {
+	border-color: #2ecc71;
 }
 
 form .category{

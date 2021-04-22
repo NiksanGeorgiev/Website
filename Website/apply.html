@@ -4,6 +4,7 @@
     <title> Apply | Hot Beans Web </title> <!-- title of the page -->
     <link rel="stylesheet" href="css/stylesheet.css"> <!--link to stylesheet-->
     <script src="https://kit.fontawesome.com/5be62e2536.js" crossorigin="anonymous"></script> <!--Script to use icons-->
+    <script defer src="javascript/applyValidation.js"></script>
 </head><!-- end of head tag-->
 
 <body><!-- start of body tag-->
@@ -17,41 +18,35 @@
        <a href="apply.html" style="color:#DDA15E;">Apply</a> <!--Link to Apply page-->
        <a href="courses.html">Courses</a> <!--Link to Courses page-->
    </div>
-   
-   <!DOCTYPE html>
-<!-- Created By CodingLab - www.codinglabweb.com -->
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="UTF-8">
-    <!---<title> Responsive Registration Form | CodingLab </title>--->
-    <link rel="stylesheet" href="style.css">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   </head>
-<body>
+
   <div class="container">
     <div class="title">Аpplication</div>
     <div class="content">
-      <form action="#">
+      <form action="#" method="get" id="form">
         <div class="user-details">
           <div class="input-box">
             <span class="details">First Name</span>
-            <input type="text" placeholder="Enter your first name" required>
+            <input type="text" id="firstName" placeholder="Enter your first name">
+            <small>Error Message</small>
           </div>
           <div class="input-box">
             <span class="details">Last Name</span>
-            <input type="text" placeholder="Enter your last name" required>
+            <input type="text" id="lastName" placeholder="Enter your last name" >
+            <small>Error Message</small>
           </div>
           <div class="input-box">
             <span class="details">Email</span>
-            <input type="text" placeholder="Enter your email" required>
+            <input type="email" id="email" placeholder="Enter your email" >
+            <small>Error Message</small>
           </div>
           <div class="input-box">
             <span class="details">Phone Number</span>
-            <input type="text" placeholder="Enter your number" required>
+            <input type="text" id="phone" placeholder="Enter your number" >
+            <small>Error Message</small>
           </div>
           <div class="input-box">
             <span class="details">Level of Education</span>
-            <select id="cars" name="cars">
+            <select id="education">
                 <option value="blank">-- Choose level of education --</option>
                 <option value="gcse">GCSE/BTEC Firsts</option>
                 <option value="aLevel">A Level/BTEC Nationals</option>
@@ -59,37 +54,40 @@
                 <option value="masters">Masters degree (MA, MSc)</option>
                 <option value="phd">Doctorate (PhD)</option>
             </select>
+            <small>Error Message</small>
           </div>
-          <div class="input-box">
+          <div class="input-box " >
             <span class="details">Position</span>
-            <select id="cars" name="cars">
+            <select id="position">
                 <option value="blank">-- Choose position --</option>
                 <option value="frontEnd">Front End Developer</option>
                 <option value="backEnd">Back End Developer</option>
                 <option value="dataBase">Data Base Developer</option>
                 <option value="seo">Search Engine Optimization</option>
             </select>
+            <small>Error Message</small>
           </div>
         </div>
         <div class="gender-details">
-          <input type="radio" name="gender" id="dot-1">
-          <input type="radio" name="gender" id="dot-2">
-          <input type="radio" name="gender" id="dot-3">
-          <span class="gender-title">Gender</span>
-          <div class="category">
-            <label for="dot-1">
-            <span class="dot one"></span>
-            <span class="gender">Male</span>
-          </label>
-          <label for="dot-2">
-            <span class="dot two"></span>
-            <span class="gender">Female</span>
-          </label>
-          <label for="dot-3">
-            <span class="dot three"></span>
-            <span class="gender">Prefer not to say</span>
-            </label>
-          </div>
+            <input type="radio" name="gender" id="dot-1">
+            <input type="radio" name="gender" id="dot-2">
+            <input type="radio" name="gender" id="dot-3">
+            <span class="gender-title">Gender</span>
+            <div class="category">
+                <label for="dot-1">
+                    <span class="dot one"></span>
+                    <span class="gender">Male</span>
+                </label>
+                <label for="dot-2">
+                    <span class="dot two"></span>
+                    <span class="gender">Female</span>
+                </label>
+                <label for="dot-3">
+                    <span class="dot three"></span>
+                    <span class="gender">Prefer not to say</span>
+                </label>
+            </div>
+            <small>Error Message</small>
         </div>
         <div class="button">
           <input type="submit" value="Apply">
