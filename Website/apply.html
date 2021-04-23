@@ -22,11 +22,11 @@
   <div class="container">
     <div class="title">Аpplication</div>
     <div class="content">
-      <form action="#" method="get" id="form">
+      <form action="apply.html" method="get" id="form">
         <div class="user-details">
           <div class="input-box">
             <span class="details">First Name</span>
-            <input type="text" id="firstName" placeholder="Enter your first name">
+            <input type="text" id="firstName" name="firstName" placeholder="Enter your first name">
             <small>Error Message</small>
           </div>
           <div class="input-box">
@@ -87,7 +87,7 @@
                     <span class="gender">Prefer not to say</span>
                 </label>
             </div>
-            <small>Error Message</small>
+            <small id="gender-error" style="color: #e74c3c;"></small>
         </div>
         <div class="button">
           <input type="submit" value="Apply">
@@ -96,8 +96,6 @@
     </div>
   </div>
 
-</body>
-</html>
 
 
     <div id="wrapper"><!-- start of wrapper-->
@@ -161,3 +159,4 @@
 </body><!-- end of body tag-->
     
 </html> <!-- end of HTML tag-->
+

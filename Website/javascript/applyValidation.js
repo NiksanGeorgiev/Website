@@ -5,7 +5,11 @@ const email = document.getElementById('email');
 const phone = document.getElementById('phone');
 const education = document.getElementById('education');
 const position = document.getElementById('position');
+const radioButtons = document.getElementsByName("gender");
+
 let error = [];
+
+
 
 form.addEventListener('submit', e =>
 {
@@ -13,8 +17,7 @@ form.addEventListener('submit', e =>
     checkInputs();
     if(error.length != 0){
         e.preventDefault();
-        console.log('adsf');
-    }   
+    }
 });
 
 function checkInputs() {
@@ -24,6 +27,10 @@ function checkInputs() {
     const phoneValue = phone.value.trim();
     const educationValue = education.value;
     const positionValue = position.value;
+    const male = radioButtons[0];
+    const female = radioButtons[1];
+    const unknown = radioButtons[2];
+
     
     ///////////////////////////First name////////////////////////////////////
     if(firstNameValue == ''){
@@ -95,6 +102,15 @@ function checkInputs() {
     }
     else{
         setSuccessFor(position)
+    }
+
+///////////////////////////Gender////////////////////////////////////
+    if(!(male.checked || female.checked || unknown.checked)){
+        document.getElementById('gender-error').innerText = "Gender cannot be blank";
+        error[0] = 1;
+    }
+    else{
+        document.getElementById('gender-error').innerText = "";
     }
 }
 

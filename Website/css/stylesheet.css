@@ -669,7 +669,6 @@ form .input-box span.details{
   border-color: #BC6C25;
 }
 
-form .gender-details small,
 form .user-details small {
 	color: #e74c3c;
   visibility: hidden;
