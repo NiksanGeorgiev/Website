@@ -39,32 +39,26 @@
         <button id="three">3</button>
         
         <div class="sudurjanie">
-            <div id="baba">
-                <h1>asdfsdf</h1>
-            </div>
-            <div id="babata">
-                <h1 style="margin-top: -59px; color:aqua;" >asdfsdf</h1>
-            </div>
-            <div id="babata" class="">
-                <h1 style="margin-top: -59px; color:red;" >asdfsdf</h1>
+            <div id="course-overview">
             </div>
         </div>
     </div>
     <script>
         document.getElementById('one').addEventListener('click', function(){
-            const buttonOne = document.getElementById('baba');
+            const buttonOne = document.getElementById('course-overview');
             buttonOne.setAttribute('include', "course1.html");
-            buttonOne.className = "active";
-            const buttonTwo = document.getElementById('babata');
-            buttonTwo.setAttribute('include', "a");
-            buttonTwo.className = "asd";
             include();
         });
 
         document.getElementById('two').addEventListener('click', function(){
-            const div = document.getElementById('babata');
-            div.setAttribute('include', "course2.html");
-            div.className = "active";
+            const buttonTwo = document.getElementById('course-overview');
+            buttonTwo.setAttribute('include', "course2.html");
+            include();
+        });
+
+        document.getElementById('three').addEventListener('click', function(){
+            const buttonThree = document.getElementById('course-overview');
+            buttonThree.setAttribute('include', "course3.html");
             include();
         });
 
