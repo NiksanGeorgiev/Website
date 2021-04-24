@@ -800,9 +800,7 @@ COURSES PAGE
   border: 1px solid black; 
 }
 
-.sudurjanie{
-  visibility: hidden;
-}
+
 
 .sudurjanie .active{
   visibility: visible;

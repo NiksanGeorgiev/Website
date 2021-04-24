@@ -43,18 +43,21 @@
                 <h1>asdfsdf</h1>
             </div>
             <div id="babata">
-                <h1 style="margin-top: -60px; color:aqua;" >asdfsdf</h1>
+                <h1 style="margin-top: -59px; color:aqua;" >asdfsdf</h1>
+            </div>
+            <div id="babata" class="">
+                <h1 style="margin-top: -59px; color:red;" >asdfsdf</h1>
             </div>
         </div>
     </div>
     <script>
         document.getElementById('one').addEventListener('click', function(){
-            const div = document.getElementById('baba');
-            div.setAttribute('include', "course1.html");
-            div.className = "active";
-            const div1 = document.getElementById('baba');
-            div1.setAttribute('include', "course2.html");
-            div1.className = "asd";
+            const buttonOne = document.getElementById('baba');
+            buttonOne.setAttribute('include', "course1.html");
+            buttonOne.className = "active";
+            const buttonTwo = document.getElementById('babata');
+            buttonTwo.setAttribute('include', "a");
+            buttonTwo.className = "asd";
             include();
         });
 
