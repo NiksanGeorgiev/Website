@@ -4,6 +4,7 @@
     <title> Courses | Hot Beans Web </title> <!-- title of the page -->
     <link rel="stylesheet" href="css/stylesheet.css"> <!--link to stylesheet-->
     <script src="https://kit.fontawesome.com/5be62e2536.js" crossorigin="anonymous"></script> <!--Script to use icons-->
+    <script src="javascript/include.js"></script>
 </head><!-- end of head tag-->
 
 <body><!-- start of body tag-->
@@ -17,13 +18,55 @@
        <a href="apply.html">Apply</a> <!--Link to Apply page-->
        <a href="courses.html" style="color:#DDA15E;">Courses</a> <!--Link to Courses page-->
    </div>
-   
 
+   <script>
+       (() => {
+    const includes = document.getElementsByTagName('include');
+    [].forEach.call(includes, i => {
+        let filePath = i.getAttribute('src');
+        fetch(filePath).then(file => {
+            file.text().then(content => {
+                i.insertAdjacentHTML('afterend', content);
+                i.remove();
+            });
+        });
+    });
+})();
+   </script>
+    <div class="butoni">
+        <button id="one">1</button>
+        <button id="two">2</button>
+        <button id="three">3</button>
+        
+        <div class="sudurjanie">
+            <div id="baba">
+                <h1>asdfsdf</h1>
+            </div>
+            <div id="babata">
+                <h1 style="margin-top: -60px; color:aqua;" >asdfsdf</h1>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById('one').addEventListener('click', function(){
+            const div = document.getElementById('baba');
+            div.setAttribute('include', "course1.html");
+            div.className = "active";
+            const div1 = document.getElementById('baba');
+            div1.setAttribute('include', "course2.html");
+            div1.className = "asd";
+            include();
+        });
 
-    <div id="wrapper"><!-- start of wrapper-->
-            
-    </div><!-- end of wrapper-->
+        document.getElementById('two').addEventListener('click', function(){
+            const div = document.getElementById('babata');
+            div.setAttribute('include', "course2.html");
+            div.className = "active";
+            include();
+        });
 
+        
+    </script>
     
     <div class="footer"><!--Footer-->
         <div class="footer-content">
