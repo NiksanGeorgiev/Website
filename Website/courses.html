@@ -19,30 +19,45 @@
        <a href="courses.html" style="color:#DDA15E;">Courses</a> <!--Link to Courses page-->
    </div>
 
-   <script>
-       (() => {
-    const includes = document.getElementsByTagName('include');
-    [].forEach.call(includes, i => {
-        let filePath = i.getAttribute('src');
-        fetch(filePath).then(file => {
-            file.text().then(content => {
-                i.insertAdjacentHTML('afterend', content);
-                i.remove();
-            });
-        });
-    });
-})();
-   </script>
-    <div class="butoni">
-        <button id="one">1</button>
-        <button id="two">2</button>
-        <button id="three">3</button>
-        
-        <div class="sudurjanie">
-            <div id="course-overview">
+    <div class="course-view">
+        <div class="cell first-cells">
+        <div class="konteinerche">
+            <img src="images/background.jpg" alt="Notebook" style="width:90%;">
+            <div class="contentche">
+                <h3>Heading</h3>  
             </div>
         </div>
+        <button id="one">1</button>  
+        </div>
+
+        <div class="cell first-cells">
+            <div class="konteinerche">
+                <img src="images/background.jpg" alt="Notebook" style="width:90%;">
+                <div class="contentche">
+                  <h3>Heading</h3>
+                </div>
+            </div>
+            <button id="two">2</button>
+        </div>
+
+        <div class="cell last-cell">
+            <div class="konteinerche">
+                <img src="images/background.jpg" alt="Notebook" style="width:90%;">
+                <div class="contentche">
+                  <h3>Heading</h3>
+                </div>
+            </div>
+            <button class="last-button" id="three">3</button>
+        </div>
+        
+            
+        
     </div>
+    <div id="course-overview" include="course1.html">
+    </div>
+    <script>
+        include();
+    </script>
     <script>
         document.getElementById('one').addEventListener('click', function(){
             const buttonOne = document.getElementById('course-overview');
@@ -61,8 +76,6 @@
             buttonThree.setAttribute('include', "course3.html");
             include();
         });
-
-        
     </script>
     
     <div class="footer"><!--Footer-->
