@@ -874,7 +874,7 @@ COURSES PAGE
   border: 1px solid rgb(22, 97, 40);
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 250px;
 }
 
 .course-one{
@@ -892,7 +892,7 @@ COURSES PAGE
   grid-row: 1/3;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 130px 1fr 1fr;
 }
 
 .course-three{
@@ -918,11 +918,17 @@ COURSES PAGE
 
 .description{
   text-align: justify;
-  padding: 25px;
+  padding: 15px;
 }
+
 .description h3{
   text-align: center;
 }
+
+.description p{
+  padding: 20px;
+}
+
 .instructor{
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -933,8 +939,8 @@ COURSES PAGE
   border-radius: 50%; 
   width: 85%; 
   height:  85%; 
-  margin-top: 25px;
-  margin-left: 15px;
+  margin-top: 10px;
+  margin-left: 10px;
 }
 
 .instructor-stats{
@@ -955,9 +961,157 @@ COURSES PAGE
 
 .instructor-info{
   grid-column: 1/3;
+  text-align: justify;
 }
 
 .learn{
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+
+.learn ul{
+  list-style: none;
+  padding: 30px;
+  height: 100%;
+}
+
+.learn ul li{
+  font-size: 17px;
+  padding-bottom: 20px; 
+}
+
+.learn ul li i{
+  padding-right: 10px;
+}
+
+.instructor-holder{
+  padding: 15px;
+}
+
+.requirements ul li{
+  padding-bottom: 20px;   
+
+}
+.requirements ul li i{
+  padding-right: 10px;
+}
+
+.reviews-grid{
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.review{
+  display: grid;
+  grid-template-rows: 100px 100px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.review-picture img{
+  border-radius: 50%; 
+  width: 35%; 
+  height: 65%; 
+  margin-top: 18px;
+  margin-left: 30px;
+  margin-bottom: 0px;
+}
+
+.review-info{
+  text-align: left;
+  margin-bottom: 0px;
+  margin-left: -80px;
+}
+
+.review-info p{
+  margin-bottom: -12px;
+}
+
+.review-text{
+  height: 10px;
+  grid-column: 1/3;
+  padding-left: 30px;
+  padding-right: 25px;
+  padding-top: 0;
+  text-align: justify;
+  
+}
+.review-text p{
+  margin-top: 0;
+}
+
+.price{
+  text-align: center;
+}
+
+.buy {
+  border-color: #4CAF50;
+  color: green;
+  border-radius: 5px;
+  padding: 14px 28px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.buy:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.rating{
+  padding: 10px;
+}
+
+.rating-number{
+  text-align: center;
+}
+
+.rating-number h1{
+  font-size: 50px;
+  color: orange;
+}
+
+
+.rating-number p{
+  color: orange;
+  margin-top: -40px;
+}
+
+.rating-graph{
+  display: grid;
+  grid-template-columns: 70% 30%;
+}
+
+.rating-bg {
+  width: 100%;
+  background-color: #ddd;
+  border-radius: 30px;
+  height: 20px;
+  margin-bottom: 15px;
+}
+
+.rating-bar {
+  text-align: right;
+  padding-bottom: 10px;
+  color: white;
+  border-radius: 30px;
+  height: 20px;
+}
+
+.rating-stars p{
+  margin-top: 0;
+  margin-bottom: 17px;
+  margin-left: 10px;
+  color: orange;
+}
+
+
+
+.fiveStar {width: 90%; background-color: orange;}
+
+.fourStar {width: 24%; background-color: orange;}
+
+.threeStar {width: 7%; background-color: orange;}
+
+.twoStar {width: 3%; background-color: orange;}
+
+.oneStar {width: 3%; background-color: orange;}
