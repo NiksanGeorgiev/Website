@@ -3,11 +3,11 @@
 /***********************
 COLOURS
 
-#606C38; greenish
-#283618; darkgreenish
-#FEFAE0; silky-white
-#DDA15E; light-peach
-#BC6C25; peach
+#0B0C10; blackish
+#1F2833; teal
+#C5C6C7; dirty-white
+#66FCF1; aqua
+#45A29E; dark aqua
 
 ***********************/
 
@@ -24,7 +24,8 @@ html,body{
   padding: 0;
   margin: 0;
   width: 100%;
-  background-color: #FEFAE0;
+  background-color: #0B0C10;
+  color: #45A29E;
 }
 
 .wrapper {
@@ -45,10 +46,10 @@ a{
 HEADER + NAVIGATION
 ***********************/
 .header{
-  background: #606C38;
+  background: #1F2833; 
   padding: 6px 24px;
   text-align: left;
-  color: white;
+  color: #C5C6C7;
   margin: 0px;
   letter-spacing: 1px;
   font: caption;
@@ -61,7 +62,7 @@ HEADER + NAVIGATION
   position: realtive;
   width: 100%;
   top: 0px;
-  background-color: #606C38;
+  background-color: #45A29E;
   margin: 0px;
   overflow: hidden;
   text-align: center;
@@ -81,8 +82,8 @@ HEADER + NAVIGATION
   letter-spacing: 2px;
 }
 .menu a:hover{
-  background:#3f5328;
-  color: #FEFAE0; 
+  background:#2f7a77;
+  color: #C5C6C7; 
 }
 
 
@@ -92,8 +93,8 @@ HEADER + NAVIGATION
 FOOTER
 ***********************/
 .footer{
-  background: #606C38;
-  color: #FEFAE0;
+  background: #1F2833;
+  color: #C5C6C7;
   height: 400px; 
   position: relative;
   font-family: Arial, Helvetica, sans-serif;
@@ -110,13 +111,18 @@ FOOTER
   padding: 25px;
 }
 
+.footer .footer-content .about p,
+.contact span{
+  color: #C5C6C7;
+}
+
 .footer .footer-content h1,
 .footer .footer-content h2{
   color:white;
 }
 
 .footer .footer-content .about h1 span{
-  color:rgb(20, 135, 170);
+  color:#0B0C10;
 }
 
 .footer .footer-content .about .contact span{
@@ -126,7 +132,7 @@ FOOTER
 }
 
 .footer .footer-content .about .socials a{
-  border: 1px solid rgb(212, 211, 211);
+  border: 1px solid rgb(138, 134, 134);
   width:  45px;
   height: 41px;
   padding-top: 9px;
@@ -140,6 +146,18 @@ FOOTER
   transition: all .3s;
 }
 
+/***********************
+COLOURS
+
+#0B0C10; blackish
+#1F2833; teal
+#C5C6C7; dirty-white
+#66FCF1; aqua
+#45A29E; dark aqua
+
+***********************/
+
+
 .footer .footer-content .about .socials a:hover {
   border: 1px solid white;
   color: white;
@@ -152,17 +170,17 @@ FOOTER
   font-size: 1.2em;
   transition: all .3s;
   text-decoration: none;
-  color: greenyellow;
+  color: #66FCF1;
 }
 .footer .footer-content .links ul a:hover{
-  color: white;
+  color: #dfe1e2;
   margin-left: 10px;
   transition: all .3s;
 }
 
 .footer .footer-content .contact-form .btn{
   padding: .7rem 1.3rem;
-  background: rgb(22, 97, 78);
+  background: #45A29E; 
   color: white;
   border: solid transparent;
   border-radius: .25rem;
@@ -172,7 +190,7 @@ FOOTER
 
 .footer .footer-content .contact-form .btn:hover{
   color: white;
-  background:rgb(15, 75, 60)
+  background:#5abeb9; 
 }
 
 .footer .footer-content .contact-form .text-input{
@@ -183,7 +201,7 @@ FOOTER
 
 .footer .footer-content .contact-form .contact-input {
   display: block;
-  background: rgb(65, 64, 64);
+  background: #292c38;
   color: gray;
   margin-bottom: 10px;
   line-height: 1.5rem;
@@ -192,12 +210,12 @@ FOOTER
 }
 
 .footer .footer-content .contact-form .contact-input:focus{
-  background: black;
+  background: #0B0C10;
 }
 
 .footer .footer-bottom{
-  background: #6a773e;
-  color: #FEFAE0;
+  background: #0B0C10;
+  color: #C5C6C7;
   height: 50px;
   width: 100%;
   font-size:17px;
@@ -225,6 +243,7 @@ HOME PAGE
 
 }
 .info{
+  color: #1F2833;
   z-index: 2;
   position: relative;
 }
@@ -788,7 +807,6 @@ COURSES PAGE
 ***********************/
 
 .course-view{
-  border: 1px solid black;
   display: grid;
   grid-template-columns: repeat(3,1fr);
   width: 80%;
@@ -868,18 +886,29 @@ COURSES PAGE
   }
 }
 
+/***********************
+COLOURS
+
+#606C38; greenish
+#283618; darkgreenish
+#FEFAE0; silky-white
+#DDA15E; light-peach
+#BC6C25; peach
+
+***********************/
 .course{
   font-family:-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
   width: 80%;
   margin: auto;
-  border: 1px solid rgb(22, 97, 40);
   display: grid;
+  border: 1px solid rgb(77, 75, 75);
+  background: radial-gradient(#4d4c4c, #d8d8d8);
+  border-radius: 10px;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 250px;
 }
 
 .course-one{
-  background-color: aqua;
   grid-column: 1/3;
   grid-row: 1/3;
   display: grid;
@@ -888,7 +917,10 @@ COURSES PAGE
 }
 
 .course-two{
-  background-color: rgb(33, 155, 94);
+  margin: 5px;
+  background: radial-gradient(#82c475, #2a502d);
+  border: 1px solid rgb(77, 75, 75);
+  border-radius: 10px;
   grid-column: 3/4;
   grid-row: 1/3;
   display: grid;
@@ -897,7 +929,6 @@ COURSES PAGE
 }
 
 .course-three{
-  background-color: rgb(114, 23, 141);
   grid-column: 1/4;
   grid-row: 3/4;
   display: grid;
@@ -905,19 +936,26 @@ COURSES PAGE
   grid-template-rows: 1fr;
 }
 
-.course-three .card{
-  margin: 10px auto 10px auto;
+.course-three .cards-stat{
+  margin: auto;
+  margin-top: 20px;
+  width: 60%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   padding: 16px;
   text-align: center;
-  background-color: #444;
-  color: white;
+  background-color:rgb(226, 224, 224);
+  border: 1px solid rgb(77, 75, 75);
+  border-radius: 10px;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.card .fa {font-size:50px;}
+.cards-stat .fa {font-size:50px;}
 
 .description{
+  margin: 5px;
+  background: radial-gradient(#6b6969, #3f3f3f);
+  border: 1px solid rgb(77, 75, 75);
+  border-radius: 10px;
   text-align: justify;
   padding: 15px;
 }
@@ -928,6 +966,15 @@ COURSES PAGE
 
 .description p{
   padding: 20px;
+}
+
+
+.instructor-holder{
+  margin: 5px;
+  background-color:rgb(226, 224, 224);
+  border: 1px solid rgb(77, 75, 75);
+  border-radius: 10px;
+  padding: 15px;
 }
 
 .instructor{
@@ -966,6 +1013,10 @@ COURSES PAGE
 }
 
 .learn{
+  margin: 5px;
+  background-color:rgb(226, 224, 224);
+  border: 1px solid rgb(77, 75, 75);
+  border-radius: 10px;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
@@ -985,9 +1036,6 @@ COURSES PAGE
   padding-right: 10px;
 }
 
-.instructor-holder{
-  padding: 15px;
-}
 
 .requirements ul li{
   padding-bottom: 20px;   
@@ -997,12 +1045,20 @@ COURSES PAGE
   padding-right: 10px;
 }
 
+.reviews-holder{
+  margin: 5px;
+  background-color:rgb(226, 224, 224);
+  border: 1px solid rgb(77, 75, 75);
+  border-radius: 10px;
+}
 .reviews-grid{
   display: grid;
   grid-template-rows: 1fr 1fr;
 }
 
+
 .review{
+  
   display: grid;
   grid-template-rows: 100px 100px;
   grid-template-columns: 1fr 1fr;
