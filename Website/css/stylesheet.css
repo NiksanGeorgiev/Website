@@ -819,13 +819,13 @@ COURSES PAGE
   padding: 10px 20px;
   text-align: center;
   text-decoration: none;
-  background-color: #DDA15E;
+  background-color: #45A29E;
   cursor: pointer;
   border-radius: 16px;
   transition: .5s;
 }
 .cell button:hover{
-  background-color: #BC6C25;
+  background-color: #255e5b;
   transition: .5s;
 }
 
@@ -924,20 +924,13 @@ COLOURS
   grid-template-rows: 1fr;
 }
 
-.course-three .cards-stat{
-  margin: auto;
-  margin-top: 20px;
-  width: 60%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  padding: 16px;
-  text-align: center;
-  background-color:#1F2833;
-  border: 1px solid rgb(77, 75, 75);
-  border-radius: 10px;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.course h3{
+  border-bottom:4px solid #9599aa;
+  border-radius: 20%;
+  width: 130px;
+  margin:auto;
+  padding-bottom:3px;  
 }
-
-.cards-stat .fa {font-size:50px;}
 
 .description{
   margin: 5px;
@@ -968,19 +961,20 @@ COLOURS
 .instructor{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 180px 1fr;
 }
 
 .instructor-image img{
   border-radius: 50%; 
   width: 85%; 
   height:  85%; 
-  margin-top: 10px;
+  margin-top: 40px;
   margin-left: 10px;
 }
 
 .instructor-stats{
   margin: auto;
+  margin-top: 40px;
 }
 .instructor-stats .fa{
   width: 16.8px;
@@ -996,6 +990,7 @@ COLOURS
 }
 
 .instructor-info{
+  margin-top: 20px;
   grid-column: 1/3;
   text-align: justify;
 }
@@ -1040,13 +1035,13 @@ COLOURS
   border-radius: 10px;
 }
 .reviews-grid{
+  margin-top:27px;
   display: grid;
   grid-template-rows: 1fr 1fr;
 }
 
 
-.review{
-  
+.review{  
   display: grid;
   grid-template-rows: 100px 100px;
   grid-template-columns: 1fr 1fr;
@@ -1069,6 +1064,15 @@ COLOURS
 
 .review-info p{
   margin-bottom: -12px;
+}
+
+.review-name{
+  color: white;
+}
+
+
+.review-stars{
+  color: orange;
 }
 
 .review-text{
@@ -1198,6 +1202,18 @@ COLOURS
     #66FCF1 .36turn );
 }
 
+.chart.second{
+  background: conic-gradient(
+    #FFFFFF .42turn,
+    #66FCF1 .42turn );
+}
+
+.chart.third{
+  background: conic-gradient(
+    #FFFFFF .84turn,
+    #66FCF1 .84turn );
+}
+
 .practical{
   width: 30px;
   color: #66FCF1;
@@ -1210,12 +1226,50 @@ COLOURS
   background:#FFFFFF;
 }
 
-.fiveStar {width: 90%; background-color: orange;}
+.fiveStar-one {width: 70%; background-color: orange;}
 
-.fourStar {width: 24%; background-color: orange;}
+.fourStar-one {width: 24%; background-color: orange;}
 
-.threeStar {width: 7%; background-color: orange;}
+.threeStar-one {width: 6%; background-color: orange;}
 
-.twoStar {width: 3%; background-color: orange;}
+.twoStar-one {width: 3%; background-color: orange;}
 
-.oneStar {width: 3%; background-color: orange;}
+.oneStar-one {width: 3%; background-color: orange;}
+
+
+
+.fiveStar-two {width: 68%; background-color: orange;}
+
+.fourStar-two {width: 25%; background-color: orange;}
+
+.threeStar-two {width: 6%; background-color: orange;}
+
+.twoStar-two {width: 3%; background-color: orange;}
+
+.oneStar-two {width: 3%; background-color: orange;}
+
+
+.fiveStar-three {width: 75%; background-color: orange;}
+
+.fourStar-three {width: 19%; background-color: orange;}
+
+.threeStar-three {width: 5%; background-color: orange;}
+
+.twoStar-three {width: 3%; background-color: orange;}
+
+.oneStar-three {width: 0%; background-color: orange;}
+
+.course-three .cards-stat{
+  margin: auto;
+  margin-top: 20px;
+  width: 60%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color:#1F2833;
+  border: 1px solid rgb(77, 75, 75);
+  border-radius: 10px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.cards-stat .fa {font-size:50px;}
