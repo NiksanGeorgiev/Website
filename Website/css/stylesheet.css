@@ -812,7 +812,7 @@ COURSES PAGE
 }
 .cell button{
   width: 50%;
-  margin-left: 20%;
+  margin-left: 14%;
   margin-top: 10px;
   border: none;
   color: black;
@@ -842,7 +842,7 @@ COURSES PAGE
   background: rgb(0, 0, 0); 
   background: rgba(0, 0, 0, 0.5);
   color: #f1f1f1;
-  width: 90%;
+  width: 80%;
   padding-left: 10px;
 }
 
