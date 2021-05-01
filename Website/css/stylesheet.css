@@ -3,7 +3,7 @@
 /***********************
 COLOURS
 
-#0B0C10; blackish
+#1E202C; blackish
 #1F2833; teal
 #C5C6C7; dirty-white
 #66FCF1; aqua
@@ -24,7 +24,7 @@ html,body{
   padding: 0;
   margin: 0;
   width: 100%;
-  background-color: #0B0C10;
+  background-color: #1E202C;
   color: #45A29E;
 }
 
@@ -123,7 +123,7 @@ FOOTER
 }
 
 .footer .footer-content .about h1 span{
-  color:#0B0C10;
+  color:#45A29E;
 }
 
 .footer .footer-content .about .contact span{
@@ -150,7 +150,7 @@ FOOTER
 /***********************
 COLOURS
 
-#0B0C10; blackish
+#1E202C; blackish
 #1F2833; teal
 #C5C6C7; dirty-white
 #66FCF1; aqua
@@ -172,6 +172,7 @@ COLOURS
   transition: all .3s;
   text-decoration: none;
   color: #66FCF1;
+  width: 45px;
 }
 
 .footer .footer-content .links ul a:hover{
@@ -211,11 +212,11 @@ COLOURS
 }
 
 .footer .footer-content .contact-form .contact-input:focus{
-  background: #0B0C10;
+  background: #1E202C;
 }
 
 .footer .footer-bottom{
-  background: #0B0C10;
+  background: #1E202C;
   color: #C5C6C7;
   height: 50px;
   width: 100%;
@@ -249,9 +250,18 @@ HOME PAGE
   position: relative;
 }
 
+.blink{
+  animation: blinker 1s linear infinite;
+}
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
 .column {
   width:50%;
-  max-height: 500px;
+  max-height: 280px;
   font-size: 20px;
   margin: 15px;
   text-align: justify;
@@ -470,18 +480,18 @@ TEAM PAGE
 /***********************
 SKILLS PAGE
 ***********************/
-.babaduk{
+.skills-holder{
   padding-top: 20px;
 }
 
-.babasluk{
+.skills-heading{
   text-align: center;
   color: white;
   padding: 1rem;
   position: relative;
 }
 
-.babasluk:after{
+.skills-heading:after{
   content: '';
   position:absolute;
   bottom: 0;
@@ -493,7 +503,7 @@ SKILLS PAGE
   border-radius: 2px;
 }
 
-.konteiner{
+.skills-holder-2{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-content: center;
@@ -674,7 +684,7 @@ form .input-box span.details{
 .user-details .input-box input:focus,
 
 .user-details .input-box select:focus{
-  border-color: #0B0C10;
+  border-color: #1E202C;
 }
 
 form .user-details small {
@@ -1181,7 +1191,7 @@ COLOURS
 /***********************
 COLOURS
 
-#0B0C10; blackish
+#1E202C; blackish
 #1F2833; teal
 #C5C6C7; dirty-white
 #66FCF1; aqua

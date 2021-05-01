@@ -1,161 +1,156 @@
 <!DOCTYPE html>
-<html> <!-- start of HTML tag-->
-<head><!-- start of head tag-->
-    <title> Apply | Hot Beans Web </title> <!-- title of the page -->
-    <link rel="stylesheet" href="css/stylesheet.css"> <!--link to stylesheet-->
+<html>  <!-- start of HTML tag-->
+<head>  <!-- start of head tag-->
+    <title> Apply | Hot Beans Web </title>                                                    <!-- title of the page -->
+    <link rel="stylesheet" href="css/stylesheet.css">                                         <!--link to stylesheet-->
     <script src="https://kit.fontawesome.com/5be62e2536.js" crossorigin="anonymous"></script> <!--Script to use icons-->
-    <script defer src="javascript/applyValidation.js"></script>
-</head><!-- end of head tag-->
+    <script defer src="javascript/applyValidation.js"></script>                               <!--my script for validation the form-->
+</head> <!-- end of head tag-->
 
-<body><!-- start of body tag-->
+<body>  <!-- start of body tag-->
    <div class="header">
        <h3>Hot Beans Web</h3>
    </div>
    <div class="menu">
-       <a href="index.html">Home</a> <!--Link to Home page-->
-       <a href="team.html">Team</a> <!--Link to Team page-->
-       <a href="skills.html">Skills</a> <!--Link to Skills page-->
-       <a href="apply.html" style="color:#0B0C10;">Apply</a> <!--Link to Apply page-->
-       <a href="courses.html">Courses</a> <!--Link to Courses page-->
+       <a href="index.html">Home</a>                            <!--Link to Home page-->
+       <a href="team.html">Team</a>                             <!--Link to Team page-->
+       <a href="skills.html">Skills</a>                         <!--Link to Skills page-->
+       <a href="apply.html" style="color:#0B0C10;">Apply</a>  <!--Link to Apply page-->
+       <a href="courses.html">Courses</a>                       <!--Link to Courses page-->
    </div>
 
-  <div class="container">
-    <div class="title">Аpplication</div>
-    <div class="content">
-      <form action="apply.html" method="get" id="form">
-        <div class="user-details">
-          <div class="input-box">
-            <span class="details">First Name</span>
-            <input type="text" id="firstName" name="firstName" placeholder="Enter your first name">
-            <small>Error Message</small>
-          </div>
-          <div class="input-box">
-            <span class="details">Last Name</span>
-            <input type="text" id="lastName" placeholder="Enter your last name" >
-            <small>Error Message</small>
-          </div>
-          <div class="input-box">
-            <span class="details">Email</span>
-            <input type="email" id="email" placeholder="Enter your email" >
-            <small>Error Message</small>
-          </div>
-          <div class="input-box">
-            <span class="details">Phone Number</span>
-            <input type="text" id="phone" placeholder="Enter your number" >
-            <small>Error Message</small>
-          </div>
-          <div class="input-box">
-            <span class="details">Level of Education</span>
-            <select id="education">
-                <option value="blank">-- Choose level of education --</option>
-                <option value="gcse">GCSE/BTEC Firsts</option>
-                <option value="aLevel">A Level/BTEC Nationals</option>
-                <option value="bachelor">Undergraduate degree (BA,BSc)</option>
-                <option value="masters">Masters degree (MA, MSc)</option>
-                <option value="phd">Doctorate (PhD)</option>
-            </select>
-            <small>Error Message</small>
-          </div>
-          <div class="input-box " >
-            <span class="details">Position</span>
-            <select id="position">
-                <option value="blank">-- Choose position --</option>
-                <option value="frontEnd">Front End Developer</option>
-                <option value="backEnd">Back End Developer</option>
-                <option value="dataBase">Data Base Developer</option>
-                <option value="seo">Search Engine Optimization</option>
-            </select>
-            <small>Error Message</small>
-          </div>
-        </div>
-        <div class="gender-details">
-            <input type="radio" name="gender" id="dot-1">
-            <input type="radio" name="gender" id="dot-2">
-            <input type="radio" name="gender" id="dot-3">
-            <span class="gender-title">Gender</span>
-            <div class="category">
-                <label for="dot-1">
+  <div class="container">                 <!--start of container div-->
+    <div class="title">Аpplication</div>  <!--title-->
+    <div class="content">                 <!--start of content div-->
+      <form action="apply.html" method="get" id="form"> <!--start of form-->
+        <div class="user-details">    <!--start of user-details div-->
+          <div class="input-box">     <!--start of input-box div-->
+            <span class="details">First Name</span>  <!--guide text-->
+            <input type="text" id="firstName" name="firstName" placeholder="Enter your first name"> <!--input box for first name-->
+            <small>Error Message</small>  <!--error message-->
+          </div>                          <!--end of input-box div-->
+          <div class="input-box">         <!--start of input-box div-->
+            <span class="details">Last Name</span> <!--guide text-->
+            <input type="text" id="lastName" placeholder="Enter your last name" > <!--input box for last name-->
+            <small>Error Message</small>  <!--error message-->
+          </div>                          <!--end of input-box div-->
+          <div class="input-box">         <!--start of input-box div-->
+            <span class="details">Email</span>  <!--guide text-->
+            <input type="email" id="email" placeholder="Enter your email" > <!--input box for email-->
+            <small>Error Message</small>  <!--error message-->
+          </div>                          <!--end of input-box div-->
+          <div class="input-box">         <!--start of input-box div-->
+            <span class="details">Phone Number</span> <!--guide text-->
+            <input type="text" id="phone" placeholder="Enter your number" > <!--input box for phone number-->
+            <small>Error Message</small>  <!--error message-->
+          </div>                          <!--end of input-box div-->
+          <div class="input-box">         <!--start of input-box div-->  
+            <span class="details">Level of Education</span> <!--guide text-->
+            <select id="education">       <!--start of education selection-->
+                <option value="blank">-- Choose level of education --</option>  <!--guide text-->
+                <option value="gcse">GCSE/BTEC Firsts</option>                  <!--option 1-->
+                <option value="aLevel">A Level/BTEC Nationals</option>          <!--option 2-->
+                <option value="bachelor">Undergraduate degree (BA,BSc)</option> <!--option 3-->
+                <option value="masters">Masters degree (MA, MSc)</option>       <!--option 4-->
+                <option value="phd">Doctorate (PhD)</option>                    <!--option 5-->
+            </select>                     <!--end of education selection-->
+            <small>Error Message</small>  <!--error message-->
+          </div>                          <!--end of input-box div-->  
+          <div class="input-box ">        <!--start of input-box div-->  
+            <span class="details">Position</span> <!--guide text-->
+            <select id="position">        <!--start of position selection-->
+                <option value="blank">-- Choose position --</option>    <!--guide text-->
+                <option value="frontEnd">Front End Developer</option>   <!--option 1-->
+                <option value="backEnd">Back End Developer</option>     <!--option 2-->
+                <option value="dataBase">Data Base Developer</option>   <!--option 3-->
+                <option value="seo">Search Engine Optimization</option> <!--option 4-->
+            </select>                     <!--end of position selection-->
+            <small>Error Message</small>  <!--error message-->
+          </div>                          <!--end of input-box div-->  
+        </div>                            <!--end of user-details div-->
+        <div class="gender-details">      <!--start of gender-details div-->
+            <input type="radio" name="gender" id="dot-1">   <!--option 1-->
+            <input type="radio" name="gender" id="dot-2">   <!--option 2-->
+            <input type="radio" name="gender" id="dot-3">   <!--option 3-->
+            <span class="gender-title">Gender</span>        <!--guide text-->
+            <div class="category">      <!--start of category div-->
+                <label for="dot-1">     <!--male label-->
                     <span class="dot one"></span>
                     <span class="gender">Male</span>
                 </label>
-                <label for="dot-2">
+                <label for="dot-2">     <!--female label-->
                     <span class="dot two"></span>
                     <span class="gender">Female</span>
                 </label>
-                <label for="dot-3">
+                <label for="dot-3">     <!--pnts label-->
                     <span class="dot three"></span>
                     <span class="gender">Prefer not to say</span>
                 </label>
-            </div>
-            <small id="gender-error" style="color: #e74c3c;"></small>
-        </div>
-        <div class="button">
+            </div>                      <!--end of category div-->
+            <small id="gender-error" style="color: #e74c3c;"></small>  <!--error message-->
+        </div>                          <!--start of gender-details div-->
+        <div class="button"> <!--apply button-->
           <input type="submit" value="Apply">
         </div>
-      </form>
-    </div>
-  </div>
+      </form>                           <!--end of form-->
+    </div>                              <!--end of content div-->
+  </div>                                <!--end of container div-->
 
-
-
-    <div id="wrapper"><!-- start of wrapper-->
-            
-    </div><!-- end of wrapper-->
 
     
-    <div class="footer"><!--Footer-->
-        <div class="footer-content">
-            <div class="footer-section about"> <!--Start of About section-->
-                <h1 class="logo-text"><span>Hot</span>Beans</h1>
-                <p> <!--Short discription of the company-->
-                    The park has many attractions such as Congo River Rapids, Runaway Mine Train, Nemesis, Oblivion, Galactica, The Smiler, and Wicker Man. It operates a total of ten.
-                </p>
-                <div class="contact"> <!--Contact details-->
-                    <span><i class="fas fa-phone">&nbsp; 123-456-7890</i></span> <!--Contact phone number-->
-                    <span><i class="fas fa-envelope">&nbsp; info@hotbeans.com</i></span> <!--Contact email-->
-                </div>
-                <div class="socials"> <!-- Links to all the social medias-->
-                    <a href="https://www.facebook.com/Hot-Beans-Web-Design-330401574036544" target="_blank"><i class="fab fa-facebook"></i></a> <!--Icon with link to Facebook-->
-                    <a href="https://www.instagram.com/hot_beans_webdesign/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a><!--Icon with link to Instagram-->
-                    <a href="https://twitter.com/H  otBeanWebDev" target="_blank"><i class="fab fa-twitter"></i></a><!--Icon with link to Twitter-->
-                    <a href="https://www.youtube.com/channel/UCz5f-dCi29qjIrVI5aNekPg" target="_blank"><i class="fab fa-youtube"></i></a><!--Icon with link to YouTube-->
-                </div>
-            </div><!--End of About section-->
+    <div class="footer">                        <!--start of footer-->
+      <div class="footer-content">              <!--start of footer-content-->
+          <div class="footer-section about">    <!--Start of About section-->
+              <h1 class="logo-text"><span>Hot</span>Beans</h1>
+              <p>                               <!--Short discription of the company-->
+                  The park has many attractions such as Congo River Rapids, Runaway Mine Train, Nemesis, Oblivion, Galactica, The Smiler, and Wicker Man. It operates a total of ten.
+              </p>
+              <div class="contact">                                                     <!--Contact details-->
+                  <span><i class="fas fa-phone">&nbsp; 123-456-7890</i></span>          <!--Contact phone number-->
+                  <span><i class="fas fa-envelope">&nbsp; info@hotbeans.com</i></span>  <!--Contact email-->
+              </div>
+              <div class="socials">         <!-- Links to all the social medias-->
+                  <a href="https://www.facebook.com/Hot-Beans-Web-Design-330401574036544" target="_blank"><i class="fab fa-facebook"></i></a> <!--Icon with link to Facebook-->
+                  <a href="https://www.instagram.com/hot_beans_webdesign/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>         <!--Icon with link to Instagram-->
+                  <a href="https://twitter.com/H  otBeanWebDev" target="_blank"><i class="fab fa-twitter"></i></a>                            <!--Icon with link to Twitter-->
+                  <a href="https://www.youtube.com/channel/UCz5f-dCi29qjIrVI5aNekPg" target="_blank"><i class="fab fa-youtube"></i></a>       <!--Icon with link to YouTube-->
+              </div>
+          </div>                            <!--End of About section-->
 
-            <div class="footer-section links"> <!--Start of Quick links section-->
-                <h2> Quick links</h2>
-                <br>
-                <ul>
-                    <a href="index.html"><li>Home</li></a> <!--Link to Home page-->
-                    <a href="team.html"><li>Team</li></a> <!--Link to Team page-->
-                    <a href="skills.html"><li>Skills</li></a> <!--Link to Skills page-->
-                    <a href="apply.html"><li>Apply</li></a> <!--Link to Apply page-->
-                    <a href="courses.html"><li>Courses</li></a> <!--Link to Courses page-->
-                </ul>
-            </div><!--End of Quick links section-->
+          <div class="footer-section links">        <!--Start of Quick links section-->
+              <h2> Quick links</h2>
+              <br>
+              <ul>
+                  <a href="index.html"><li>Home</li></a>      <!--Link to Home page-->
+                  <a href="team.html"><li>Team</li></a>       <!--Link to Team page-->
+                  <a href="skills.html"><li>Skills</li></a>   <!--Link to Skills page-->
+                  <a href="apply.html"><li>Apply</li></a>     <!--Link to Apply page-->
+                  <a href="courses.html"><li>Courses</li></a> <!--Link to Courses page-->
+              </ul>
+          </div>      <!--End of Quick links section-->
 
-            <div class="footer-section contact-form"> <!--Start of contact form-->
-                <h2>Contact us</h2>
-                <br>
-                <form action="index.html" method="post">
-                    <input type="email" name="email" class="text-input contact-input" placeholder="Your email address..."><!--Box for user's email-->
-                    <textarea name="message"  class="text-input contact-input" placeholder="Your message..." ></textarea> <!--Box for user's message-->
-                    <button type="submit" class="btn btn-big"> <!--Send button-->
-                        <i class="fas fa-envelope"></i>
-                        Send
-                    </button>
-                </form>
-            </div> <!--End of contact form-->
+          <div class="footer-section contact-form">   <!--Start of contact form-->
+              <h2>Contact us</h2>
+              <br>
+              <form action="index.html" method="post">
+                  <input type="email" name="email" class="text-input contact-input" placeholder="Your email address...">  <!--Box for user's email-->
+                  <textarea name="message"  class="text-input contact-input" placeholder="Your message..." ></textarea>   <!--Box for user's message-->
+                  <button type="submit" class="btn btn-big">  <!--Send button-->
+                      <i class="fas fa-envelope"></i>
+                      Send
+                  </button>
+              </form>
+          </div>      <!--End of contact form-->
 
-        </div>
+      </div>
 
-        <div class="footer-bottom"> <!--Copyright info-->
-            &copy; 2017 - 2021 Hot Beans Web
-        </div>
-    </div><!--End of Footer-->
-    
+      <div class="footer-bottom">         <!--Copyright info-->
+          &copy; 2017 - 2021 Hot Beans Web
+      </div>
+  </div>  <!--End of Footer-->
+  
 
 
-</body><!-- end of body tag-->
-    
-</html> <!-- end of HTML tag-->
+</body>   <!-- end of body tag-->
+  
+</html>   <!-- end of HTML tag-->
