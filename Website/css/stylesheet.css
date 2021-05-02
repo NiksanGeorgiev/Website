@@ -342,9 +342,78 @@ HOME PAGE
 	height: 70%;
 }
 
-@media only screen and (max-width: 900px){
-    
+@media screen and (max-width: 900px){
+  .wrapper {
+    width:90%;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+  }
+  
+  .column{
+    width:80%;
+    margin-bottom: auto;
+  }
+
+  .one{
+    margin-bottom: 90px;
+  }
+  
+  .two{
+    margin-bottom: 123px;
+  }
+
+  .homepagePic h2{
+    margin-top: 180px;
+  }
+
+  .homepagePic{
+    max-width: 80%;
+  }
 }
+
+@media screen and (max-width: 800px){
+  .column{
+    width:90%;
+  }
+  .homepagePic{
+    max-width: 80%;
+  }
+}
+
+@media screen and (max-width: 700px){
+  .column{
+    width:100%;
+  }
+  .homepagePic{
+    max-width: 85%;
+  }
+
+}
+@media screen and (max-width: 600px){
+  .wrapper {
+    margin: 20px;
+  }
+
+  .column{
+    width:100%;
+    margin: 20px;
+  }
+
+  .two{
+    margin-bottom: 123px;
+  }
+
+
+  .homepagePic{
+    max-width: 90%;
+  }
+
+  .homepagePic h2{
+    margin-top: 80px;
+  }
+}
+
 
 /***********************
 TEAM PAGE
@@ -575,8 +644,12 @@ SKILLS PAGE
 }
 
 .skill-box{
-  padding: 1rem;
+  padding: .5rem;
   color: #65b3b0;
+}
+
+.skill-box p{
+  text-align: justify;
 }
 
 .skill-box:hover > .skill-title:after, .skill-box:hover > .skill-title:before{
@@ -664,13 +737,13 @@ hr{
 }
 
 @media screen and (max-width: 990px) {
-  .konteiner{
+  .skills-holder-2{
     grid-template-columns: repeat(2, 1fr);
     padding: 2rem 50px;
   }
 }
 @media screen and (max-width: 650px) {
-  .konteiner{
+  .skills-holder-2{
     grid-template-columns: 1fr;
   }
 }
@@ -781,7 +854,7 @@ form .category{
 
 form .category label{
   display: flex;
-  align-items: center;
+  align-content: center;
   cursor: pointer;
 }
 
@@ -826,10 +899,14 @@ form .button input{
 }
 
 form .button input:hover{
-/* transform: scale(0.99); */
 background: linear-gradient(-135deg, #1e5e5a, #307470);
 }
 
+@media(max-width: 910px){
+  .container .content .category label{
+    height: 30px;
+  }
+}
 @media(max-width: 584px){
 .container{
 max-width: 100%;
@@ -859,6 +936,7 @@ form .user-details .input-box{
   .container .content .category{
     flex-direction: column;
   }
+
 }
 
 /***********************
