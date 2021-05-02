@@ -6,10 +6,12 @@
     <link rel="shortcut icon" href="images/websiteLogo.png" />                                <!--website logo-->
     <script src="https://kit.fontawesome.com/5be62e2536.js" crossorigin="anonymous"></script> <!--Script to use icons-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> <!--Script for jquery-->
+    <script src="javascript/scrollTopBtn.js"></script>                                        <!--Script for scroll to top button-->
     <script src="javascript/parallax.min.js"></script>                                        <!--Script for parallax effect-->
 </head> <!-- end of head tag-->
 
 <body>  <!-- start of body tag-->
+   
    <div class="header">
        <h3>Hot Beans Web</h3>
    </div>
@@ -37,7 +39,7 @@
        <p class="info" id="parallax-text"> <!--text inside the picture-->
        </p>
    </div>
-
+   
    <script>
     var i = 0;
     var txt = 'Have a clear mind!';
@@ -71,6 +73,7 @@
     <div class="wrapper">           <!--start of wrapper-->
         <div class="column">    <!--start of column one div-->
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia asperiores ullam, placeat, sint repellendus veritatis iste fugit earum aliquam iusto cum sunt odio adipisci, quam non minima praesentium in blanditiis?
+          
         </div>                      <!--end of column one div-->
         <div class="column two">    <!--start of column two div-->
             <img class="secondPic" src="images/rightPicture.jpg" alt="Picture of a PC setup"> <!--image-->
@@ -97,7 +100,7 @@
                     <div class="socials">       <!-- Links to all the social medias-->
                         <a href="https://www.facebook.com/Hot-Beans-Web-Design-330401574036544" target="_blank"><i class="fab fa-facebook"></i></a> <!--Icon with link to Facebook-->
                         <a href="https://www.instagram.com/hot_beans_webdesign/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>         <!--Icon with link to Instagram-->
-                        <a href="https://twitter.com/H  otBeanWebDev" target="_blank"><i class="fab fa-twitter"></i></a>                            <!--Icon with link to Twitter-->
+                        <a href="https://twitter.com/HotBeanWebDev" target="_blank"><i class="fab fa-twitter"></i></a>                            <!--Icon with link to Twitter-->
                         <a href="https://www.youtube.com/channel/UCz5f-dCi29qjIrVI5aNekPg" target="_blank"><i class="fab fa-youtube"></i></a>       <!--Icon with link to YouTube-->
                     </div>
                 </div>      <!--End of About section-->
@@ -135,7 +138,9 @@
         </div>  <!--End of Footer-->
         
     
-
+        <div class="top-button">
+            <i id="top-button" class="fas fa-chevron-up"></i>
+        </div>
     </body> <!-- end of body tag-->
         
     </html> <!-- end of HTML tag-->
