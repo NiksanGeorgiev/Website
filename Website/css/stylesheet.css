@@ -950,14 +950,13 @@ COURSES PAGE
   margin: auto;
   margin-top: 30px;
   min-height: 500px;
-  align-content: center;
 }
 
 .cell{
-  align-items: center;
   width: 100%;
-  margin-left: 18px;
+  margin-left: 11%;
 }
+
 .cell button{
   width: 50%;
   margin-left: 14%;
@@ -1002,7 +1001,8 @@ COURSES PAGE
   .last-cell{
     grid-column: 1/3;
     width: 50%;
-    margin:auto;
+    margin-left: 30%;
+    padding-top: 40px;
   }
   .first-cells{
     padding-top: 40px;
@@ -1015,26 +1015,18 @@ COURSES PAGE
     flex-direction: column;
   }
 
+  .cell{
+    margin-left: 10%;
+  }
+
   .last-cell{
     padding-top: 40px;
-    justify-content: center;
     width: 100%;
-    margin-left: 15px;
+    margin-left: 10%;
   }
 }
 
-/***********************
-COLOURS
-
-#606C38; greenish
-#283618; darkgreenish
-#FEFAE0; silky-white
-#DDA15E; light-peach
-#BC6C25; peach
-
-***********************/
 .course{
-  font-family:-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
   width: 80%;
   margin: auto;
   display: grid;
@@ -1042,6 +1034,7 @@ COLOURS
   border-radius: 10px;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 650px 650px 250px;
+  font-family:-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
 }
 
 .course-one{
@@ -1176,6 +1169,11 @@ COLOURS
   padding-right: 10px;
 }
 
+.rating{
+  width: 90%;
+  margin: auto;
+}
+
 .reviews-holder{
   margin: 5px;
   background-color: #1F2833;
@@ -1187,7 +1185,10 @@ COLOURS
   display: grid;
   grid-template-rows: 1fr 1fr;
 }
-
+.rating-graph{
+  color:orange;
+  font-size:15px;
+}
 
 .review{  
   display: grid;
@@ -1207,7 +1208,7 @@ COLOURS
 .review-info{
   text-align: left;
   margin-bottom: 0px;
-  margin-left: -80px;
+  margin-left: -60px;
 }
 
 .review-info p{
@@ -1276,8 +1277,7 @@ COLOURS
 }
 
 .rating-graph{
-  display: grid;
-  grid-template-columns: 70% 30%;
+  display: inline;
 }
 
 .rating-bg {
@@ -1294,7 +1294,9 @@ COLOURS
   color: #263130;
   border-radius: 30px;
   height: 20px;
+
 }
+
 
 .rating-stars p{
   margin-top: -1px;
@@ -1305,11 +1307,9 @@ COLOURS
 
 .overview p{
   display: inline-block;
-  margin: 30px;
+  margin: 10px;
   padding: 10px;
 }
-
-
 
 .overview ul{
   list-style: none;
@@ -1326,21 +1326,10 @@ COLOURS
 }
 
 
-/***********************
-COLOURS
-
-#1E202C; blackish
-#1F2833; teal
-#C5C6C7; dirty-white
-#66FCF1; aqua
-#45A29E; dark aqua
-
-***********************/
-
 .chart { 
   width: 200px;
   height: 200px;
-  margin: 20%;
+  margin-left: 20%;
   border-radius: 50%
 }
 
@@ -1421,3 +1410,203 @@ COLOURS
 }
 
 .cards-stat .fa {font-size:50px;}
+
+@media screen and (max-width:1210px){
+  .course{
+    width: 80%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  .course-one{
+    grid-column: 1/3;
+    grid-row: 1/3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  
+  .course-two{
+    grid-column: 1/3;
+    grid-row: 3/5;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 250px 500px 300px;
+  }
+  
+  .course-three{
+    grid-column: 1/4;
+    grid-row: 5/6;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  .rating{
+    width: 60%;
+  }
+
+  .overview{
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr;
+  }
+
+  .overview-one{
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  .overview-two{
+    grid-column:2/3;
+    grid-row: 1/2;
+  }
+
+  .overview .overview-one h3{
+    margin-top: 13px;
+  }
+  .overview ul li{
+    padding-top:15px;
+    padding-bottom: 20px;
+  
+  }
+
+  .chart { 
+    margin-top: 20px;
+    margin-left: 12%;
+  }
+}
+
+@media screen and (max-width: 900px){
+  .course{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+  }
+
+  .course-one{
+    grid-column: 1/3;
+    grid-row: 1/5;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+  
+  .course-two{
+    grid-column: 1/3;
+    grid-row: 5/8;
+    grid-template-columns: 1fr;
+    grid-template-rows: 250px 500px 300px;
+  }
+  
+  .course-three{
+    grid-column: 1/4;
+    grid-row: 8/9;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 400px;
+    margin-bottom: -120px;
+  }
+
+  .instructor-holder{
+    padding: 80px;
+  }
+
+  .reviews-holder{
+    padding: 80px;
+  }
+
+}
+@media screen and (max-width: 720px){
+
+  .instructor-holder{
+    padding: 20px;
+  }
+
+  .reviews-holder{
+    padding: 20px;
+  }
+
+  .overview{
+    display: grid;
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .overview-one{
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  .overview-two{
+    margin-top: 40px;
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+
+}
+
+@media screen and (max-width: 450px){
+
+  .course{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr ;
+  }
+
+  .course-one{
+    grid-template-columns:  100%;
+    grid-template-rows: 1fr 1fr 1fr 800px;
+  }
+
+  .instructor-holder{
+    padding: 5px;
+  }
+
+  .instructor{
+    grid-template-columns: 250px;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin-left: 6px;
+  }
+
+  .instructor-image{
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  .instructor-stats{
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+
+  .instructor-info{
+    grid-column: 1/2;
+    grid-row: 3/5;
+    
+  }
+
+  .reviews-holder{
+    padding: 5px;
+  }
+
+  .learn{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  
+}
+
+
+
+@media screen and (max-width: 400px){
+
+  .instructor-image{
+    margin-left:0;
+  }
+  .instructor-info{
+    padding-right: 40px;
+  }
+  .review-info{
+    margin-left: -30px;
+  }
+
+  .review{
+    margin-bottom: 85px;
+  }
+}
