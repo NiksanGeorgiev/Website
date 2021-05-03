@@ -15,10 +15,32 @@ form.addEventListener('submit', e =>
 {
     error = [];
     checkInputs();
+    if (confirm("Are you sure you want to submit the form?")) {
+        popUp();
+      } else {
+        console.log("no")
+      }
     if(error.length != 0){
         e.preventDefault();
     }
+    else{
+
+    }
 });
+
+function popUp(){
+    var modal = document.getElementById("myModal");
+    var span = document.getElementsByClassName("close")[0];
+    modal.style.display = "block";
+    span.onclick = function() {
+        modal.style.display = "none";
+      }
+      window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
+}
 
 function checkInputs() {
     const firstNameValue = firstName.value.trim();
