@@ -9,7 +9,7 @@
     <script src="https://kit.fontawesome.com/5be62e2536.js" crossorigin="anonymous"></script> <!--Script to use icons-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> <!--Script for jquery-->
     <script src="javascript/scrollTopBtn.js"></script>                                        <!--Script for scroll to top button-->
-    <script src="javascript/parallax.min.js"></script>                                        <!--Script for parallax effect-->
+    <script src="javascript/parallax.min.js"></script>                                        <!--Script for parallax effect-->  
 </head> <!-- end of head tag-->
 
 <body>  <!-- start of body tag-->
@@ -123,9 +123,9 @@
                     <h2>Contact us</h2>
                     <br>
                     <form action="index.html" method="post">
-                        <input type="email" name="email" class="text-input contact-input" placeholder="Your email address...">  <!--Box for user's email-->
-                        <textarea name="message"  class="text-input contact-input" placeholder="Your message..." ></textarea>   <!--Box for user's message-->
-                        <button type="submit" class="btn btn-big">  <!--Send button-->
+                        <input id="emailContactFooter" type="email" name="email" class="text-input contact-input" placeholder="Your email address...">  <!--Box for user's email-->
+                        <textarea id="messageContactFooter" name="message"  class="text-input contact-input" placeholder="Your message..." ></textarea>   <!--Box for user's message-->
+                        <button type="reset" class="btn btn-big" id="sendButton">  <!--Send button-->
                             <i class="fas fa-envelope"></i>
                             Send
                         </button>
@@ -138,8 +138,7 @@
                 &copy; 2017 - 2021 Hot Beans Web
             </div>
         </div>  <!--End of Footer-->
-        
-    
+
         <div class="top-button">
             <i id="top-button" class="fas fa-chevron-up"></i>
         </div>

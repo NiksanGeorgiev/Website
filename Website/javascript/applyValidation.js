@@ -11,35 +11,45 @@ let error = [];
 
 
 
-form.addEventListener('submit', e =>
-{
+form.addEventListener('submit', e =>{
     error = [];
+    var openPopUp = false;
     checkInputs();
     if (confirm("Are you sure you want to submit the form?")) {
-        popUp();
-      } else {
+        openPopUp = true
+    } 
+    else {
         console.log("no")
-      }
+    }
     if(error.length != 0){
         e.preventDefault();
     }
     else{
-
+        e.preventDefault();
+        if(openPopUp){
+            popUp();
+        }
     }
 });
 
 function popUp(){
     var modal = document.getElementById("myModal");
     var span = document.getElementsByClassName("close")[0];
+    var customMessage = document.getElementById('customMessage');
+    document.body.classList.add("stop-scrolling");
+
     modal.style.display = "block";
+    customMessage.innerHTML = firstName.value.toString() + " " + lastName.value.toString() + ", thank you for your application!";
     span.onclick = function() {
         modal.style.display = "none";
-      }
-      window.onclick = function(event) {
+        location.reload();
+    }
+    window.onclick = function(event) {
         if (event.target == modal) {
-          modal.style.display = "none";
+            modal.style.display = "none";    
+            location.reload();     
         }
-      }
+    }
 }
 
 function checkInputs() {
