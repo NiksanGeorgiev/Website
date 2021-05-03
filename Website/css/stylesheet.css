@@ -1,5 +1,4 @@
 
-
 /***********************
 COLOURS
 
@@ -274,40 +273,6 @@ FOOTER
 }
 
 
-@media only screen and (max-width: 990px){
-
-  .footer{
-    height: auto; 
-  }
-  
-  .footer .footer-content{
-    height: auto;
-    grid-template-columns: 1fr 1fr;
-  }
-  .footer .footer-content .about p{
-    padding: 0 20px;
-  }
-  .footer .footer-content .contact-form{
-    grid-column: 1/3;
-    padding-bottom: 90px;  
-  }
-}
-
-@media only screen and (max-width: 600px){
-  
-  .footer .footer-content{
-    height: auto;
-    grid-template-columns: 1fr;
-  }
-  .footer .footer-content .contact-form{
-    grid-column: 1/2;
-  }
-
-  .footer .footer-content .contact-form .contact-input{
-    width: 100%;
-  }
-}
-
  
 
 /********************************
@@ -366,77 +331,6 @@ HOME PAGE
 	height: 70%;
 }
 
-@media screen and (max-width: 900px){
-  .wrapper {
-    width:90%;
-    align-items: center;
-    flex-direction: column;
-    margin: auto;
-  }
-  
-  .column{
-    width:80%;
-    margin-bottom: auto;
-  }
-
-  .one{
-    margin-bottom: 90px;
-  }
-  
-  .two{
-    margin-bottom: 123px;
-  }
-
-  .homepagePic h2{
-    margin-top: 180px;
-  }
-
-  .homepagePic{
-    max-width: 80%;
-  }
-}
-
-@media screen and (max-width: 800px){
-  .column{
-    width:90%;
-  }
-  .homepagePic{
-    max-width: 80%;
-  }
-}
-
-@media screen and (max-width: 700px){
-  .column{
-    width:100%;
-  }
-  .homepagePic{
-    max-width: 85%;
-  }
-
-}
-@media screen and (max-width: 600px){
-  .wrapper {
-    margin: 20px;
-  }
-
-  .column{
-    width:100%;
-    margin: 20px;
-  }
-
-  .two{
-    margin-bottom: 123px;
-  }
-
-
-  .homepagePic{
-    max-width: 90%;
-  }
-
-  .homepagePic h2{
-    margin-top: 80px;
-  }
-}
 
 
 /***********************
@@ -596,43 +490,7 @@ TEAM PAGE
 }
 
 
-@media screen and (max-width: 1150px){
-  .card-wrapper{
-    grid-template-columns: 18rem 18rem 18rem;
-  }
-  .card{
-    margin: 2rem;
-  }
 
-
-  .last-card{
-    grid-column: 2/2;
-  }
-
-}
-@media screen and (max-width: 900px){
-  .card-wrapper{
-    grid-template-columns: repeat(2, 18rem);
-  }
-  .card{
-    margin: 1rem;
-  }
-  
-
-}
-@media screen and (max-width: 600px){
-  .card-wrapper{
-    grid-template-columns: repeat(1, 18rem);
-  }
-  .card{
-    margin: 2rem;
-  }
-
-  .last-card{
-    grid-column: 1/1;
-  }
-
-}
 /***********************
 SKILLS PAGE
 ***********************/
@@ -763,17 +621,6 @@ hr{
   background-color: #1F2833;
 }
 
-@media screen and (max-width: 990px) {
-  .skills-holder-2{
-    grid-template-columns: repeat(2, 1fr);
-    padding: 2rem 50px;
-  }
-}
-@media screen and (max-width: 650px) {
-  .skills-holder-2{
-    grid-template-columns: 1fr;
-  }
-}
 /***********************
 APPLY PAGE
 ***********************/
@@ -929,43 +776,6 @@ form .button input:hover{
 background: linear-gradient(-135deg, #1e5e5a, #307470);
 }
 
-@media(max-width: 910px){
-  .container .content .category label{
-    height: 30px;
-  }
-}
-@media(max-width: 584px){
-.container{
-max-width: 100%;
-}
-
-form .user-details .input-box{
-    margin-bottom: 15px;
-    width: 100%;
-  }
-
-  form .category{
-    width: 100%;
-  }
-
-  .content form .user-details{
-    max-height: 300px;
-    overflow-y: scroll;
-  }
-
-  .user-details::-webkit-scrollbar{
-    width: 5px;
-  }
-
-}
-
-  @media(max-width: 459px){
-  .container .content .category{
-    flex-direction: column;
-  }
-
-}
-
 /***********************
 COURSES PAGE
 ***********************/
@@ -1020,38 +830,6 @@ COURSES PAGE
   padding-left: 10px;
 }
 
-@media screen and (max-width:1120px) {
-  .course-view{
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: 1fr 1fr;
-  }
-  .last-cell{
-    grid-column: 1/3;
-    width: 50%;
-    margin-left: 30%;
-    padding-top: 40px;
-  }
-  .first-cells{
-    padding-top: 40px;
-  }
-}
-
-@media screen and (max-width:750px) {
-  .course-view{
-    display: flex;
-    flex-direction: column;
-  }
-
-  .cell{
-    margin-left: 10%;
-  }
-
-  .last-cell{
-    padding-top: 40px;
-    width: 100%;
-    margin-left: 10%;
-  }
-}
 
 .course{
   width: 80%;
@@ -1437,203 +1215,3 @@ COURSES PAGE
 }
 
 .cards-stat .fa {font-size:50px;}
-
-@media screen and (max-width:1210px){
-  .course{
-    width: 80%;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-  }
-
-  .course-one{
-    grid-column: 1/3;
-    grid-row: 1/3;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-  }
-  
-  .course-two{
-    grid-column: 1/3;
-    grid-row: 3/5;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 250px 500px 300px;
-  }
-  
-  .course-three{
-    grid-column: 1/4;
-    grid-row: 5/6;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-  }
-
-  .rating{
-    width: 60%;
-  }
-
-  .overview{
-    display: grid;
-    grid-template-columns: 1fr 1fr; 
-    grid-template-rows: 1fr;
-  }
-
-  .overview-one{
-    grid-column: 1/2;
-    grid-row: 1/2;
-  }
-
-  .overview-two{
-    grid-column:2/3;
-    grid-row: 1/2;
-  }
-
-  .overview .overview-one h3{
-    margin-top: 13px;
-  }
-  .overview ul li{
-    padding-top:15px;
-    padding-bottom: 20px;
-  
-  }
-
-  .chart { 
-    margin-top: 20px;
-    margin-left: 12%;
-  }
-}
-
-@media screen and (max-width: 900px){
-  .course{
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
-  }
-
-  .course-one{
-    grid-column: 1/3;
-    grid-row: 1/5;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-  }
-  
-  .course-two{
-    grid-column: 1/3;
-    grid-row: 5/8;
-    grid-template-columns: 1fr;
-    grid-template-rows: 250px 500px 300px;
-  }
-  
-  .course-three{
-    grid-column: 1/4;
-    grid-row: 8/9;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 400px;
-    margin-bottom: -120px;
-  }
-
-  .instructor-holder{
-    padding: 80px;
-  }
-
-  .reviews-holder{
-    padding: 80px;
-  }
-
-}
-@media screen and (max-width: 720px){
-
-  .instructor-holder{
-    padding: 20px;
-  }
-
-  .reviews-holder{
-    padding: 20px;
-  }
-
-  .overview{
-    display: grid;
-    grid-template-columns: 1fr; 
-    grid-template-rows: 1fr 1fr;
-  }
-
-  .overview-one{
-    grid-column: 1/2;
-    grid-row: 1/2;
-  }
-
-  .overview-two{
-    margin-top: 40px;
-    grid-column: 1/2;
-    grid-row: 2/3;
-  }
-
-}
-
-@media screen and (max-width: 450px){
-
-  .course{
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr ;
-  }
-
-  .course-one{
-    grid-template-columns:  100%;
-    grid-template-rows: 1fr 1fr 1fr 800px;
-  }
-
-  .instructor-holder{
-    padding: 5px;
-  }
-
-  .instructor{
-    grid-template-columns: 250px;
-    grid-template-rows: 1fr 1fr 1fr;
-    margin-left: 6px;
-  }
-
-  .instructor-image{
-    grid-column: 1/2;
-    grid-row: 1/2;
-  }
-
-  .instructor-stats{
-    grid-column: 1/2;
-    grid-row: 2/3;
-  }
-
-  .instructor-info{
-    grid-column: 1/2;
-    grid-row: 3/5;
-    
-  }
-
-  .reviews-holder{
-    padding: 5px;
-  }
-
-  .learn{
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-  }
-  
-}
-
-
-
-@media screen and (max-width: 400px){
-
-  .instructor-image{
-    margin-left:0;
-  }
-  .instructor-info{
-    padding-right: 40px;
-  }
-  .review-info{
-    margin-left: -30px;
-  }
-
-  .review{
-    margin-bottom: 85px;
-  }
-}
