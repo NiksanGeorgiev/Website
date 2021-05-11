@@ -182,7 +182,7 @@ FOOTER
   border: 3px solid rgb(138, 134, 134);
   width: 45px;
   height: 41px;
-  padding-top: 7px;
+  padding-top: 6px;
   margin-right: 5px;
   text-align: center;
   display: inline-block;
@@ -201,6 +201,10 @@ FOOTER
 
 .footer .footer-content .about .socials .fa-instagram:hover {
   color: #e6683c;
+}
+
+.footer .footer-content .links ul {
+  list-style-type: none;
 }
 
 .footer .footer-content .links ul a {
