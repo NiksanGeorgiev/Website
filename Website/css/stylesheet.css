@@ -158,6 +158,10 @@ FOOTER
   padding: 25px;
 }
 
+.footer .footer-content .about {
+  text-align: center;
+}
+
 .footer .footer-content .about p,
 .contact span {
   color: #c5c6c7;
@@ -409,7 +413,7 @@ TEAM PAGE
   font-weight: 300;
 }
 
-.about {
+.card .about {
   font-size: 1.1rem;
   margin: 0.5rem 1rem;
   font-size: 15px;
